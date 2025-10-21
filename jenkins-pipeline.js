@@ -6,3 +6,7 @@
 //Karena pipeline dibuat menggunakan kode, maka bisa dengan mudah mengubah atau me-review tahapan pipeline
 //Karena pipeline biasanya dibuat dalam file dan disimpan di projectnya, maka tidak perlu takut hilang ketika terjadi restart atau kerusakan di Jenkins nya
 //Juga bisa memasukkan logic yang sederhana sampai kompleks di Pipeline, seperti pengecekan kondisi, perulangan, dan lain-lain
+
+//Jenkins Pipeline Instalation
+//Saat pertama install jenkins, secara default jenkins pipeline tidak terdapat di jenkins
+plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih dahulu atau lewat Plugin Manager
