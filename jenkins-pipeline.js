@@ -21,3 +21,9 @@ plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih
 //Biasanya dalam pipeline akan terdapat banyak stage, Stage menggunakan kata kunci stage
 //4. Step adalah sebuah instruksi/perintah yg harus dilakukan oleh jenkins
 //Step dilakukan di dalam Stage, Step menggunakan kata kunci steps
+
+//Pipeline Job
+//Untuk membuat job pipeline sama seperti membuat job biasa tapi bisa memilih opsi Pipeline dibawah nama item
+//Opsi Pipeline ini baru muncul setelah menginstall plugin Pipeline pada jenkins
+//Tampilannya juga sama seperti job biasa, namun dibagian bawah ada tambahan section Pipeline berisi Definition dan Script
+//Bisa set Definition dan Script, dan coba build setelah terbuat job pipeline nya
