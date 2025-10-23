@@ -27,3 +27,11 @@ plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih
 //Opsi Pipeline ini baru muncul setelah menginstall plugin Pipeline pada jenkins
 //Tampilannya juga sama seperti job biasa, namun dibagian bawah ada tambahan section Pipeline berisi Definition dan Script
 //Bisa set Definition dan Script, dan coba build setelah terbuat job pipeline nya
+
+//Jenkins File
+//Walaupun bisa membuat kode Pipeline di jenkins job, tapi biasanya banyak yang membuat kode pipeline di file Jenkinsfile
+//File Jenkinsfile ini biasanya disimpan di repository project terkait agar ketika terjadi error tidak hilang
+//File Jenkinsfile bisa diisi dengan scrip pipeline yang sebelumnya ditaruh di configure jenkins job
+//Lalu set pada pipeline job bagian Pipeline Definition menjadi Pipeline script from SCM dan isi SCM:Git, Repository, Credential, & Branch
+//Kemduian bisa save dan jalankan job jenkins pipeline yang sudah dibuat
+//Hasil running akan sama dengan memasukan script pipeline manuaal di configure, selanjutnya untuk konfigurasi bisa diupdate langsung di Jenkinsfile
