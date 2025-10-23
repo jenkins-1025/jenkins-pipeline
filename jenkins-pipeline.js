@@ -35,3 +35,19 @@ plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih
 //Lalu set pada pipeline job bagian Pipeline Definition menjadi Pipeline script from SCM dan isi SCM:Git, Repository, Credential, & Branch
 //Kemduian bisa save dan jalankan job jenkins pipeline yang sudah dibuat
 //Hasil running akan sama dengan memasukan script pipeline manuaal di configure, selanjutnya untuk konfigurasi bisa diupdate langsung di Jenkinsfile
+
+//Agent
+//Merupakan bagian yang digunakan untuk menentukan dimana pipeline akan dijalankan
+//Jika menggunakan nilai any, maka pipeline bisa dijalankan di agent manapun (Master / agent lain)
+//Agent mendukung beberapa value berikut :
+//any: pipeline akan dieksekusi di agent manapun termasuk master
+//none: pipeline tidak akan dieksekusi di agent manapun, berarti dijalankan di master
+//label: pipeline hanya akan dijalankan agent yang memiliki label yang sudah ditentukan
+//note: sama dengan label, hanya bisa mengubah workspace lokasi folder secara custom
+    //biasanya ketika ingin menjalankan pipeline hanya pada agent tertentu, seperti di agent khusus OS windows, linux, dll
+    //maka bisa mengubah nilai dari agent menjadi label/node yang diinginkan
+    //untuk menambahkan label bisa di dalam konfigurasi Agent dan tambahkan pada section Labels, jika lebih dari 1 label pisahkan dengan spasi
+    //Jangan lupa tambahkan juga pada Jenkinsfile untuk labelnya, jika lupa salah satunya akan menunggu sampai menemukan labelnya ketika build
+//docker: pipeline dijalankan di docker container
+//dockerfile: sama seperti docker, namun image container dibuat dari dockerfile
+//kubernetes: pipeline dijalankan di kubernetes cluster
