@@ -155,3 +155,7 @@ jenkins.io/doc/book/pipeline/syntax/#options //banyak sekali option yang bisa di
 //ok: text untuk tombol ok
 //submitter: user boleh memasukkan input, bisa gunakan koma jika lebih dari satu user
 //parameters: parameter yang perlu diinput oleh user
+
+//When
+//Perintah yang digunakan untuk menentukan pada kondisi apa sebuah stage dieksekusi
+jenkins.io/doc/book/pipeline/syntax/#when //detail kondisi sangat beragam
