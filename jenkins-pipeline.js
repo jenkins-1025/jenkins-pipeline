@@ -159,3 +159,8 @@ jenkins.io/doc/book/pipeline/syntax/#options //banyak sekali option yang bisa di
 //When
 //Perintah yang digunakan untuk menentukan pada kondisi apa sebuah stage dieksekusi
 jenkins.io/doc/book/pipeline/syntax/#when //detail kondisi sangat beragam
+
+//Sequential Stages
+//Stages bisa memiliki stage lagi di dalamnya, dan stage di dalamnya secara default akan dieksekusi secara sequential berurut
+//Stage didalamnya hanya bisa memiliki satu perintah, misal steps(yg sering dipakai), stages, paralel, atau matrix
+//Jadi ketika sudah tambahkan stages lagi dalam stage, maka tidak bisa digabung dengan steps misalnya
