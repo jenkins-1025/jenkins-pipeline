@@ -195,3 +195,10 @@ jenkins.io/doc/pipeline/steps/credentials-binding/
 //Jenkins Pipeline memiliki fitur Multi Branch Pipeline, dimana bisa secara otomatis mendeteksi branch yang terdapat di Git
 //Oleh karena itu jika terdapat branch baru, tidak perlu menambah Job secara manual, begitu pula jika menghapus branch, tidak perlu menghapus Job secara manual
 //Khusus Multi Branch Pipeline, hanya bisa membuat pipeline dari Jenkinsfile, tidak bisa langsung di Job nya
+
+//Pipeline Limitation
+//Pipeline di Jenkins sebenarnya dijalankan dalam sebuah Groovy Function
+//Sayangnya, ada maksimal baris yang diperbolehkan pada Groovy Function
+//Oleh karena itu, tidak disarankan membuat pipeline yang sangat panjang dalam satu file
+//Oleh karena itu ada baiknya perlu membuat yang namanya Jenkins Shared Library, yaitu fitur dimana bisa membuat library untuk pipeline, sehingga bisa digunakan ulang, atau dipisah-pisahkan kode pipeline nya
+issues.jenkins.io/browse/JENKINS-37984
