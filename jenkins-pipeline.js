@@ -170,3 +170,14 @@ jenkins.io/doc/book/pipeline/syntax/#when //detail kondisi sangat beragam
 //Secara default parallel akan menunggu semua proses selesai, walaupun ada salah stage yang error
 //Namun jika ingin otomatis stop semua proses stage ketika error disalah satu stage, bisa tambahkan perintah failFast / tambah parallelAlwaysFailFast() di option
 //Saat menggunakan parallel, bisa tambah agent di stage atasnya, oleh karena itu perlu tentukan di stiap stage parallelnya
+
+//Matrix
+//Adalah fitur untuk mendefinisikan multidimensi matrix yang berisi kombinasi name-value, dan dijalankan secara parallel
+//Matrix sangat powerfull, karena bisa menjalankan stage secara parallel dengan kombinasi matrix yang sudah ditentukan
+//Karena Matrix berjalan parallel, sama seperti parallel juga bisa menggunakan option failFast/parallelAlwaysFailFast()
+//Saat membuat axis di matrix, secara otomatis nanti stage akan di build menggunakan kombinasi dari matrix axis value tersebut, atau disebut Matrix Cell
+//Pada kode yg dibuat, artinya dari dua axis, akan bisa jadi beberapa kombinasi OS + ARC
+//linux 32, linux 64, windows 32, windows 64, mac 32, mac 64
+//Secara otomatis di Stage bisa mengambil data axis dari environment variable
+//Matrix juga memiliki perintah exclude, jika kita ingin meng-exclude cell tertentu
+//Misal ingin meng exclude mac 32, karena misal sudah tidak ada versi mac 32
