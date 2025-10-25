@@ -181,3 +181,10 @@ jenkins.io/doc/book/pipeline/syntax/#when //detail kondisi sangat beragam
 //Secara otomatis di Stage bisa mengambil data axis dari environment variable
 //Matrix juga memiliki perintah exclude, jika kita ingin meng-exclude cell tertentu
 //Misal ingin meng exclude mac 32, karena misal sudah tidak ada versi mac 32
+
+//Credentials Binding Plugin
+//Sebelumnya sudah menggunakan perintah credentials() untuk mengambil data dari Jenkins Credentials secara aman
+//Namun kadang-kadang ingin menggunakan Credentials hanya pada bagian tertentu, dan tidak ingin mengekspos nya ke environment variable
+//Ini bisa menggunakan plugin Credentials Bindings
+plugins.jenkins.io/credentials-binding/
+jenkins.io/doc/pipeline/steps/credentials-binding/
