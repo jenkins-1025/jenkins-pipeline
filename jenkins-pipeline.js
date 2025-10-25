@@ -141,3 +141,9 @@ jenkins.io/doc/book/pipeline/syntax/#options //banyak sekali option yang bisa di
 //booleanParam: untuk tipe parameter boolean (true/false)
 //choice: untuk tipe parameter string/text dengan opsi pilihan yang sudah disediakan
 //password: untuk tipe parameter string yang dianggap sensitif
+
+//Trigger
+//Adalah perintah yg digunakan untuk melakukan run job secara otomatis, beberapa trigger tipe :
+//cron: untuk run job otomatis berdasarkan ekspresi cron yang sudah ditetapkan
+//pollSCM: menggunakan ekspresi cron yang otomatis mengecek perubahan di SCM, jika terjadi perubaahan job otomatis berjalan
+//upstream: untuk menjalankan job setelah job lain selesai dengan result -> javadoc.jenkins-ci.org/hudson/model/Result.html
