@@ -113,3 +113,17 @@ jenkins.io/doc/pipeline/steps/ //bahkan bisa membuat plugin steps sendiri
 //Saat membuat job manual sebelumnya, bisa mendapatkan global environment variable spt JOB_NAME, BUILD_NUMBER, dan lain-lain
 //Pada pipeline juga bisas namun karena menggunakan Groovy, maka harus menggunakan global variable yang otomatis bisa diakses groovy
 <jenkins-url/job/JOB_NAME/pipeline-syntax/globals> //Melihat detail global variable di pipeline
+
+//Environment
+//Selain global variable, pipeline juga mendukung penambahan environment variable
+//Jika environment variable ditambahkan di pipeline, maka semua stages bisa menggunakan valuenya
+//Jika environment variable ditambahkan di stage, maka hanya bisa digunakan di stage tersebut
+//Di environment juga terdapat perintah credentials(), yg bisa untuk mengambil data dari jenkins credentials
+//Ini lebih aman dibanding menempatkan credentials langsung di Jenkinsfile, jenis credentials yang didukung :
+//Secret Text, secara otomatis environment variable berisi value dari secret text
+//Secret File, secara otomatis environment variable berisi lokasi file secret yang secara temporary dibuat dan dihapus otomatis setelah pipeline selesai
+//Username and Password, secara otomatis environment variable berisi data username:password, dan secara otomatis akan dibuatkan environment variable dengan nama NAMA_USR dan NAMA_PSW
+//SSH with Private Key, secara otomatis environment variable berisi lokasi file SSH yang secara temporary dibuat dan dihapus otomatis. Dan juga secara otomatis akan dibuatkan environment variable NAMA_USR dan NAMA_PSW (berisi passphrase SSH)
+//NOTE: SENSITIVE_INFORMATION
+//Perintah ${KEY} didalam “” adalah Groovy String Interpolation, dan itu seharusnya tidak digunakan untuk data sensitive, misal credentials
+//Agar informasi sensitive tidak terlihat, gunakan tanda ‘’ (petik satu), dan gunakan $KEY
