@@ -127,3 +127,7 @@ jenkins.io/doc/pipeline/steps/ //bahkan bisa membuat plugin steps sendiri
 //NOTE: SENSITIVE_INFORMATION
 //Perintah ${KEY} didalam “” adalah Groovy String Interpolation, dan itu seharusnya tidak digunakan untuk data sensitive, misal credentials
 //Agar informasi sensitive tidak terlihat, gunakan tanda ‘’ (petik satu), dan gunakan $KEY
+
+//Option
+//Perintah Option digunakan untuk pengaturan pipeline, ada di level pipeline/level stage (seperti environment)
+jenkins.io/doc/book/pipeline/syntax/#options //banyak sekali option yang bisa diatur
