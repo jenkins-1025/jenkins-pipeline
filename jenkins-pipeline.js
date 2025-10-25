@@ -92,3 +92,8 @@ jenkins.io/doc/pipeline/steps/workflow-durable-task-step //detal dokumentasi
 //Pipeline mendukung script yang bisa menyisipkan kode Groovy pada pipeline tersebut
 //Secara default jika menggunakan Groovy dalam steps akan error, perlu tambahkan script untuk manandai bagian tsb ada kode Groovy dulu
 goovy-lang.org //dokumentasi bahasa groovy
+
+//Utility Steps
+//Plugin yg berisi utility yang bisa digunakan mempermudah pembuatan pipeline, contoh: membaca file, membuat archive file, membuat hash, dll
+pipeline.jenkins.io/pipeline-utility-steps/ //tidak terinstall otomatis, perlu install manual
+jenkins.io/doc/pipeline/steps/pipeline-utility-steps/ //dokumentasi lengkap apa saja yang bisa dilakukan plugin ini
