@@ -80,3 +80,9 @@ plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih
 //Saat install pipeline plugin otomatis juga akan menginstall Pipeline Basic Steps yg mengandung perintah/instruksi step yang bisa digunakan
 plugins.jenkins.io/workflow-basic-steps/ //otomatis akan terinstall dan ada di manage jenkins -> plugin -> installed
 jenkins.io/doc/pipeline/steps/workflow-basic-steps/ //daftar perintah steps selain echo
+
+//Node and Process Steps
+//Salah satu steps yang sering digunakan adalah Node and Process Steps
+plugins.jenkins.io/workflow-durable-task-step/ //plugin ini juga otomatis terinstall ketika install pipeline plugin
+//Plugin tsb biasanya digunakan untuk menjalankan/mengeksekusi perintah terminal, spt shellscript(unix)/cmd(windows)
+jenkins.io/doc/pipeline/steps/workflow-durable-task-step //detal dokumentasi
