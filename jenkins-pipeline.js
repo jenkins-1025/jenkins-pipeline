@@ -108,3 +108,8 @@ jenkins.io/doc/pipeline/steps/ //bahkan bisa membuat plugin steps sendiri
 //Saat menggunakan agent  otomatis semua stage akan dijalankan di agent tersebut, tapi kadang butuh menjalankan stage di agent berbeda
 //Misal stage pertama butuh agent java, dan agent kedua butuh agent golang dan lain-lain
 //Maka bisa dengan jadikan agent di pipeline tersebut menjadi none, lalu tambah agent di tiap spesifik stage
+
+//Global Variable
+//Saat membuat job manual sebelumnya, bisa mendapatkan global environment variable spt JOB_NAME, BUILD_NUMBER, dan lain-lain
+//Pada pipeline juga bisas namun karena menggunakan Groovy, maka harus menggunakan global variable yang otomatis bisa diakses groovy
+<jenkins-url/job/JOB_NAME/pipeline-syntax/globals> //Melihat detail global variable di pipeline
