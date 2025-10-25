@@ -64,3 +64,10 @@ plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih
 //-Failure: jika status pipeline sukses
 //-Success: jika status pipeline sukses
 //-Cleanup: selalu dijalankan, namun setelah kondisi post lainnya
+
+//Stages
+//Bagian dimana terdapat satu atau lebih stage, biasanya berisikan detail dari tahapan dalam continuous delivery yang dibuat di pipeline
+//Tidak ada aturan cara penamaan Stage, sehingga bisa bebas seperti apa. Contoh biasanya Build, Test, Deploy, dll
+//Stage akan dijalankan secara sequential berurut, jika pada stage ada error maka stage selanjutnya tidak akan dieksekusi
+//Terdapat plugin yang dapat melihat proses build di tiap stage secara visual yaitu Pipeline Stage View
+//Jika sudah install akan muncul visualisasi stage dengan detail tiap stage beserta error, waktu, tanggal, commit, dll
