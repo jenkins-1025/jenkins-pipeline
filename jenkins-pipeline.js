@@ -86,3 +86,9 @@ jenkins.io/doc/pipeline/steps/workflow-basic-steps/ //daftar perintah steps sela
 plugins.jenkins.io/workflow-durable-task-step/ //plugin ini juga otomatis terinstall ketika install pipeline plugin
 //Plugin tsb biasanya digunakan untuk menjalankan/mengeksekusi perintah terminal, spt shellscript(unix)/cmd(windows)
 jenkins.io/doc/pipeline/steps/workflow-durable-task-step //detal dokumentasi
+
+//Script
+//Kadang dibutuhkan untuk membuat pipeline yang sangat flexible, dan kadang yang kompleks
+//Pipeline mendukung script yang bisa menyisipkan kode Groovy pada pipeline tersebut
+//Secara default jika menggunakan Groovy dalam steps akan error, perlu tambahkan script untuk manandai bagian tsb ada kode Groovy dulu
+goovy-lang.org //dokumentasi bahasa groovy
