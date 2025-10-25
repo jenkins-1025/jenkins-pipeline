@@ -131,3 +131,13 @@ jenkins.io/doc/pipeline/steps/ //bahkan bisa membuat plugin steps sendiri
 //Option
 //Perintah Option digunakan untuk pengaturan pipeline, ada di level pipeline/level stage (seperti environment)
 jenkins.io/doc/book/pipeline/syntax/#options //banyak sekali option yang bisa diatur
+
+//Parameter
+//Pada materi Jenkins dasar, bisa menambahkan parameter pada job yang dibuat
+//Di pipeline juga bisa menambah parameter, dengan cara menggunakan perintah parameters
+//Parameter yang diinput oleh user akan secara otomatis disimpan dalam global variable, tipe parameter :
+//string: tipe parameter string/text
+//text: mirip seperti string, tapi input akan berupa multiline text area
+//booleanParam: untuk tipe parameter boolean (true/false)
+//choice: untuk tipe parameter string/text dengan opsi pilihan yang sudah disediakan
+//password: untuk tipe parameter string yang dianggap sensitif
