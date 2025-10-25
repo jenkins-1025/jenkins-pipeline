@@ -71,3 +71,7 @@ plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih
 //Stage akan dijalankan secara sequential berurut, jika pada stage ada error maka stage selanjutnya tidak akan dieksekusi
 //Terdapat plugin yang dapat melihat proses build di tiap stage secara visual yaitu Pipeline Stage View
 //Jika sudah install akan muncul visualisasi stage dengan detail tiap stage beserta error, waktu, tanggal, commit, dll
+
+//Steps
+//Berisikan instruksi-instruksi yang dilakukan pipeline
+//Bisa berisi satu atau beberapa steps sekaligus, misal ingin menulis dengan echo dll
