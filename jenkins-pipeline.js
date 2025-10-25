@@ -97,3 +97,8 @@ goovy-lang.org //dokumentasi bahasa groovy
 //Plugin yg berisi utility yang bisa digunakan mempermudah pembuatan pipeline, contoh: membaca file, membuat archive file, membuat hash, dll
 pipeline.jenkins.io/pipeline-utility-steps/ //tidak terinstall otomatis, perlu install manual
 jenkins.io/doc/pipeline/steps/pipeline-utility-steps/ //dokumentasi lengkap apa saja yang bisa dilakukan plugin ini
+
+//Other Steps
+//Selain Basic Steps, Node & Process Steps, dan Utility Steps. Masih banyak Steps lain yang bisa digunkan
+//Sudah banyak plugin Steps yang tersedia dan bisa digunakan untuk mempermudah pembuatan pipeline
+jenkins.io/doc/pipeline/steps/ //bahkan bisa membuat plugin steps sendiri
