@@ -75,3 +75,8 @@ plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih
 //Steps
 //Berisikan instruksi-instruksi yang dilakukan pipeline
 //Bisa berisi satu atau beberapa steps sekaligus, misal ingin menulis dengan echo dll
+
+//Basic Steps
+//Saat install pipeline plugin otomatis juga akan menginstall Pipeline Basic Steps yg mengandung perintah/instruksi step yang bisa digunakan
+plugins.jenkins.io/workflow-basic-steps/ //otomatis akan terinstall dan ada di manage jenkins -> plugin -> installed
+jenkins.io/doc/pipeline/steps/workflow-basic-steps/ //daftar perintah steps selain echo
