@@ -147,3 +147,11 @@ jenkins.io/doc/book/pipeline/syntax/#options //banyak sekali option yang bisa di
 //cron: untuk run job otomatis berdasarkan ekspresi cron yang sudah ditetapkan
 //pollSCM: menggunakan ekspresi cron yang otomatis mengecek perubahan di SCM, jika terjadi perubaahan job otomatis berjalan
 //upstream: untuk menjalankan job setelah job lain selesai dengan result -> javadoc.jenkins-ci.org/hudson/model/Result.html
+
+//Input
+//Input mirip dengan parameter, input adalah perintah yang bisa ditambahkan di stage
+//Saat tambahkan input di stage, otomatis stage tersebut tidak akan berjalan sebelum input diisi oleh user, option input :
+//id: adalah identifier input, defaultnya sama dengan nama stage
+//ok: text untuk tombol ok
+//submitter: user boleh memasukkan input, bisa gunakan koma jika lebih dari satu user
+//parameters: parameter yang perlu diinput oleh user
