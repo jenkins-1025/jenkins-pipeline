@@ -51,3 +51,16 @@ plugins.jenkins.io/workflow-aggregator/ //perlu install plugin pipeline terlebih
 //docker: pipeline dijalankan di docker container
 //dockerfile: sama seperti docker, namun image container dibuat dari dockerfile
 //kubernetes: pipeline dijalankan di kubernetes cluster
+
+//Post
+//Bagian yang digunakan untuk menambah steps di akhir job ketika sebuah kondisi pipeline terpenuhi
+//Misal setelah selesai pipeline dibuat, ingin mengirim pesan ke slack/email, bisa juga ketika ingin mengirim notifikasi ketika terjadi error
+//Terdapat banyak kondisi post yang bisa digunakan yaitu :
+//-Always: kondisi apapun, akan selelau dilakukan
+//-Changed: jika status pipeline berubah dari sebelumnya. misal dari error ke sukses
+//-Fixed: jika status berubah dari error menjadi sukses
+//-Regression: jika status sdari sukses menjadi tidak sukses
+//-Aborted: jika pipeline dibatalkan secara manual
+//-Failure: jika status pipeline sukses
+//-Success: jika status pipeline sukses
+//-Cleanup: selalu dijalankan, namun setelah kondisi post lainnya
