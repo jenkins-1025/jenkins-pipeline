@@ -102,3 +102,9 @@ jenkins.io/doc/pipeline/steps/pipeline-utility-steps/ //dokumentasi lengkap apa 
 //Selain Basic Steps, Node & Process Steps, dan Utility Steps. Masih banyak Steps lain yang bisa digunkan
 //Sudah banyak plugin Steps yang tersedia dan bisa digunakan untuk mempermudah pembuatan pipeline
 jenkins.io/doc/pipeline/steps/ //bahkan bisa membuat plugin steps sendiri
+
+//Agent per Stage
+//Materi sebelumnya sudah menggunakan agent untuk menentukan tempat menjalankan pipeline
+//Saat menggunakan agent  otomatis semua stage akan dijalankan di agent tersebut, tapi kadang butuh menjalankan stage di agent berbeda
+//Misal stage pertama butuh agent java, dan agent kedua butuh agent golang dan lain-lain
+//Maka bisa dengan jadikan agent di pipeline tersebut menjadi none, lalu tambah agent di tiap spesifik stage
