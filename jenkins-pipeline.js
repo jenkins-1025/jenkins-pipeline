@@ -188,3 +188,10 @@ jenkins.io/doc/book/pipeline/syntax/#when //detail kondisi sangat beragam
 //Ini bisa menggunakan plugin Credentials Bindings
 plugins.jenkins.io/credentials-binding/
 jenkins.io/doc/pipeline/steps/credentials-binding/
+
+//Multi Branch Pipeline
+//Sebelumnya hanya membuat Job dari repository Git dengan branch yang sudah ditentukan
+//Pada kenyataannya, hanya menggunakan satu branch tidaklah terlalu bermanfaat,jika ingin secara otomatis proses Job berjalan di semua branch di repository Git
+//Jenkins Pipeline memiliki fitur Multi Branch Pipeline, dimana bisa secara otomatis mendeteksi branch yang terdapat di Git
+//Oleh karena itu jika terdapat branch baru, tidak perlu menambah Job secara manual, begitu pula jika menghapus branch, tidak perlu menghapus Job secara manual
+//Khusus Multi Branch Pipeline, hanya bisa membuat pipeline dari Jenkinsfile, tidak bisa langsung di Job nya
