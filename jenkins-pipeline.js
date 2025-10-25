@@ -164,3 +164,9 @@ jenkins.io/doc/book/pipeline/syntax/#when //detail kondisi sangat beragam
 //Stages bisa memiliki stage lagi di dalamnya, dan stage di dalamnya secara default akan dieksekusi secara sequential berurut
 //Stage didalamnya hanya bisa memiliki satu perintah, misal steps(yg sering dipakai), stages, paralel, atau matrix
 //Jadi ketika sudah tambahkan stages lagi dalam stage, maka tidak bisa digabung dengan steps misalnya
+
+//Parallel
+//Di kondisi tertentu, kadang ingin stages berjalan secara parallel
+//Secara default parallel akan menunggu semua proses selesai, walaupun ada salah stage yang error
+//Namun jika ingin otomatis stop semua proses stage ketika error disalah satu stage, bisa tambahkan perintah failFast / tambah parallelAlwaysFailFast() di option
+//Saat menggunakan parallel, bisa tambah agent di stage atasnya, oleh karena itu perlu tentukan di stiap stage parallelnya
